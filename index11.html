@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru-RU" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <title>Осетровая рыбалка</title>
+
+	<script>
+		
+		function isEven(number){
+			if(number===1){
+				return false;
+			}
+			else if(number===0){
+				return true;
+			}
+			 return isEven(number - 2 * (number > 0 ? 1 : -1));
+		}
+		console.log(isEven(50));
+
+        console.log(isEven(75));
+
+        console.log(isEven(-1));
+
+		
+</script>
+
+</body>
+</html>
