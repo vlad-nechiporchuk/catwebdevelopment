@@ -19,76 +19,77 @@
   </head>
 <body>
 
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
 
-	<!-- Header -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
 
-	<header class="header" >
-		<nav class="navbar">
-		    <div class="container">
-			   <div class="logo">
-			     
-			    </div>
-			    <div>
-		       		<ul class="nav navbar-nav navbar-right">
-		       			<li>
-		            		<a href="#header" class="header_button">
-		            			Главная
-		            		</a>
-		            	</li>
-		       			<li>
-		            		<a href="#about" class="header_button">
-		            			Услуги
-		            		</a>
-		            	</li>
-		            	<li>
-		            		<a href="#portfolio" class="header_button">
-		            			Наши работы
-		            		</a>
-		            	</li>
-		            	<li>
-		            		<a href="#prices" class="header_button">
-		            			Цены
-		            		</a>
-		            	</li>
-		            	
-		            	<li>
-		            		<a href="#about" class="header_button">
-		            			О компании
-		            		</a>
-		            	</li>
-		            	<li>
-		            		<a href="#contacts" class="header_button">
-		            			Контакты
-		            		</a>
-		            	</li>
-		        	</ul>  
-	        	  
-		  	</div>
-		</nav>
-	    <div class="masthead">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<h1 class="main_text">
-							<strong>Разработка сайтов<br />для вашего бизнеса</strong>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul id="navigation" class="nav nav-justified">
+          <li data-menuanchor="home"><a href="#home">Главная</a></li>
+          <li data-menuanchor="about"><a href="#about">О нас</a></li>
+          <li data-menuanchor="portfolio"><a href="#portfolio">Портфолио</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-						</h1>
-						<p class="lead">Качественное выполнение работ с гарантией!</p>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+  <div id="fullpage">
+    <section class="section" data-anchor="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Первый экран</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Main content-->
+    <section class="section" data-anchor="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Второй экран</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section" data-anchor="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Третий экран</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
     
 	<!-- Scripts -->
+<!-- Библиотека jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- js файлы плагина fullpage -->
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.easings.min.js"></script>
+  <script src="js/scrolloverflow.min.js"></script>
+  <script src="js/jquery.fullPage.min.js"></script>
+  <!-- инициализация плагина fullpage -->
+  <script>
+    $(document).ready(function () {
+      $('#fullpage').fullpage();
+      menu: '#navigation'
+    });
+  </script>
 
-	<script src="js/main.js"></script>
-		<script src="js/bootstrap.js"></script>
-			<script src="js/bootstrap.min.js"></script>
 
 	
 	
