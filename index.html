@@ -59,16 +59,13 @@
 	        	  
 		  	</div>
 		</nav>
+		</div>
 	</header>
 
-	<div class="right-navigation">
-          <span class="n-navigation" data-menuanchor="home"><a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a></span><br>
-          <span class="n-navigation" data-menuanchor="about"><a href="#about"><i class="fa fa-history" aria-hidden="true"></i></a></span><br>
-          <span class="n-navigation" data-menuanchor="portfolio"><a href="#portfolio">O</a></span><br>
-	</div>
+
 
   <div id="fullpage">
-    <section class="section" data-anchor="home">
+    <section id="first" class="section" data-anchor="home">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -97,8 +94,13 @@
         </div>
       </div>
     </section>
+
   </div>
-    
+    	<div class="right-navigation">
+          <span id="t-first" class="n-navigation" data-menuanchor="home"><a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a></span><br>
+          <span class="n-navigation" data-menuanchor="about"><a href="#about"><i class="fa fa-history" aria-hidden="true"></i></a></span><br>
+          <span class="n-navigation" data-menuanchor="portfolio"><a href="#portfolio">O</a></span><br>
+	</div>
 	<!-- Scripts -->
 <!-- Библиотека jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -115,6 +117,10 @@
       menu: '#navigation'
     });
   </script>
+
+  <script type="text/javascript">var bg = document.getElementById('t-first');
+document.getElementById('first').addEventListener("mouseover", function(){bg.style.zoom = "2.2",bg.style.margin = "-3%";this.addEventListener("mouseout", function(){bg.style.zoom = "",bg.style.margin = "1%";});
+});</script>
 
 
 	

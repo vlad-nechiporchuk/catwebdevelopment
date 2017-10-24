@@ -25,21 +25,6 @@ h1{
   2. Header
 -------------------------------------------------------------------------------*/
 
-
-
-.header{
-  color:#fff;
-  background:url(../images/bg/header.jpg) center top no-repeat;
-  background-size:cover;
-}
-.header_button{
-  color:#9acdcd ;
-}
-.logo{
-  background:url(../images/logo/logo.png);
-  background-size:cover;
-  
-}
 .navbar{
   position:absolute;
   top:0;
@@ -54,14 +39,6 @@ h1{
     
 }
 
-.masthead{
-  display: table-cell;
-  vertical-align: middle;
-  width: 1%;
-  padding:170px 0 120px;
-  height: 100vh;
-  text-align: center;
-}
 
 .lead{
   font-size: initial;
@@ -73,6 +50,9 @@ h1{
 }
 
 
+.section:hover ~ .fa-home {
+zoom:4;
+}
 
 .section:first-child {
 
@@ -109,7 +89,7 @@ border-radius: 35%;
 background: white;
 opacity: 0.2;
 text-decoration: : none;
-margin-top: 275px;
+margin-top: -375px;
 z-index: 99999;
 position: absolute;
 margin-left: 97%;
