@@ -17,7 +17,24 @@
 .navbar {
   min-height: 40px;
 }
+.n-navigation{
+margin: 2px;
+zoom: 2;
+opacity: 1;
+text-color:red;
 
-.nav > li > a:focus {
-  background: #fff;
+}
+.n-navigation:hover{
+
+}
+
+.right-navigation{
+border-radius: 25%;
+background: white;
+opacity: 0.2;
+text-decoration: : none;
+margin-top: 275px;
+z-index: 99999;
+position: absolute;
+margin-left: 97%;
 }
