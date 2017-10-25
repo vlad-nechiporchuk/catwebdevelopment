@@ -12,7 +12,7 @@
 -------------------------------------------------------------------------------*/
 
 .navbar{
-
+opacity: 0.8;
 background: white;
   position:absolute;
   top:0;
@@ -53,22 +53,28 @@ background: white;
   min-height: 40px;
 }
 .n-navigation{
-margin: 0;
+position: relative;
+margin: 25%;
 zoom: 2;
 opacity: 1;
 }
 .n-navigation:hover{
-zoom: 2.1;
-margin: ;
+right: 0.5px;
+border-radius: 50%;
+box-shadow: 0 0 2px rgba(0,0,0,0.1);
+zoom: 2.2;
+
 }
 
 .right-navigation{
+height: 130px;
+width: 50px;
 border-radius: 35%;
 background: white;
-opacity: 0.2;
+opacity: 0.6;
 text-decoration: : none;
-margin-top: -375px;
+top: 45%;
 z-index: 99999;
 position: absolute;
-margin-left: 97%;
+right: 0.7%;
 }
