@@ -1,18 +1,4 @@
 
-body{
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.5;
-  color:#000;
-  height: 100%;
-  overflow: hidden;
-  padding-right: 0!important;
-}
-h1{
-  color:#f3cb00 ;
-}
 
 
     
@@ -26,16 +12,15 @@ h1{
 -------------------------------------------------------------------------------*/
 
 .navbar{
+
+background: white;
   position:absolute;
   top:0;
   left:0;
-  z-index: 10;
+  z-index: 9999;
   width: 100%;
-  padding-top:10px;
   border-radius: 0;
   font-size: 15px;
-  color:#fff;
-  background-color: transparent;
     
 }
 
@@ -45,14 +30,9 @@ h1{
   margin:20px 0 0;
   color:#6a6a6a;
 }
-.main_text{
-  color: #f3cb00 ;
-}
 
 
-.section:hover ~ .fa-home {
-zoom:4;
-}
+
 
 .section:first-child {
 
@@ -73,15 +53,13 @@ zoom:4;
   min-height: 40px;
 }
 .n-navigation{
-margin: 1%;
+margin: 0;
 zoom: 2;
 opacity: 1;
-text-color:red;
-
 }
 .n-navigation:hover{
-zoom: 2.2;
-margin: -5%;
+zoom: 2.1;
+margin: ;
 }
 
 .right-navigation{
