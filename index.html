@@ -1,184 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-<meta charset="utf-8" />
-  <title>CatWeb</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <!-- Таблица стилей Bootstrap -->
-  <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--файлы скриптов-->
+  <link href='css/main.css' rel='stylesheet' type='text/css'>
   <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
-  <!-- Основная таблица стилей -->
-  <!-- CSS файл плагина fullpage -->
-  <link href="css/jquery.fullPage.css" type="text/css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-
-  </head>
-<body>
-<header class="header" >
-		<nav id="menu_hide" class="navbar">
-		    <div class="container">
-			   <div class="logo">
-			     
-			    </div>
-			    <div>
-		       		<ul class=" nav navbar-nav navbar-right">
-		       			<li>
-		            		<a id="menu_hide"  href="#header" class="header_button">
-		            			Главная
-		            		</a>
-		            	</li>
-		       			<li>
-		            		<a href="#about" class="header_button">
-		            			Услуги
-		            		</a>
-		            	</li>
-		            	<li>
-		            		<a href="#portfolio" class="header_button">
-		            			Наши работы
-		            		</a>
-		            	</li>
-		            	<li>
-		            		<a href="#prices" class="header_button">
-		            			Цены
-		            		</a>
-		            	</li>
-		            	
-		            	<li>
-		            		<a href="#about" class="header_button">
-		            			О компании
-		            		</a>
-		            	</li>
-		            	<li>
-		            		<a href="#contacts" class="header_button">
-		            			Контакты
-		            		</a>
-		            	</li>
-		        	</ul>  
-	        	  
-		  	</div>
-		</nav>
-		</div>
-	</header>
-
-
-
-  <div id="fullpage">
-    <section class="section" data-anchor="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>Первый экран</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" data-anchor="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>Второй экран</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" data-anchor="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>Третий экран</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </div>
-    	<div class="right-navigation">
-          <span class="n-navigation" data-menuanchor="home"><a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a></span><br>
-          <span class="n-navigation" data-menuanchor="about"><a href="#about"><i class="fa fa-history" aria-hidden="true"></i></a></span><br>
-          <span class="n-navigation" data-menuanchor="portfolio"><a href="#portfolio"><i class="fa fa-home" aria-hidden="true"></i></a></span><br>
-	</div>
-	<!-- Scripts -->
   <script src="https://use.fontawesome.com/bd55a35307.js"></script>
-<!-- Библиотека jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <!-- js файлы плагина fullpage -->
-  <script src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <script src="https://use.fontawesome.com/bd55a35307.js"></script>
   <script src="js/main.js"></script>
   <script src="js/bootstrap.js"></script>
-  <script src="js/jquery.easings.min.js"></script>
-  <script src="js/scrolloverflow.min.js"></script>
-  <script src="js/jquery.fullPage.min.js"></script>
-  <!-- инициализация плагина fullpage -->
-  <script>
-    $(document).ready(function () {
-      $('#fullpage').fullpage();
-      menu: '#navigation'
-    });
-  </script>
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<!--дополнительные скрипты к плагинам:-->
+<!--Плагин поблочной прокрутки:"one page-scroll"-->
+    <script>
+        $(document).ready(function(){
+            $(".main").onepage_scroll({
+              sectionContainer: "section",
+              responsiveFallback: 600,
+              loop: true
+            });
+		});
+    </script>
+<!---->
+</head>
+<body>
+<!--шапка-->
+  <header class="header" >
+    <nav  class="navbar">
+        <div class="container">
+         <div class="logo">
+           
+          </div>
+          <div>
+              <ul class=" nav navbar-nav navbar-right">
+                <li>
+                    <a href="#header" class="header_button">
+                    Главная
+                    </a>
+                  </li>
+                <li>
+                    <a href="#about" class="header_button">
+                      Услуги
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#portfolio" class="header_button">
+                      Наши работы
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#prices" class="header_button">
+                      Цены
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#about" class="header_button">
+                      О компании
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contacts" class="header_button">
+                      Контакты
+                    </a>
+                  </li>
+              </ul>  
+            
+          </div>
+        </div>
+    </nav>
+  </header>
+  <!--Блоки прокрутки-->
+  <div class="wrapper">
+    <div class="main">
+      <section class="page1 block">
+        <div class="page_container">
+        </div>
+      </section>
+      <section class="page2 block">
+        <div class="page_container">
+        </div>
+      </section>
+      <section class="page3 block">
+        <div class="page_container">
+        </div>
+      </section>
+    </div>
+  </div>
 
-  <script>
-jQuery("document").ready(function($) {
- $(window).scroll(function(){
- if($(this).scrollTop()>114) {
-    $("#menu_hide").hide()
-   }
-     else {$("#menu_hide").show() 
-   }
- }
-)});
-</script>
-
-<script type="text/javascript">
-  // Функция для добавления обработчика событий
-  function addHandler(object, event, handler) {
-    if (object.addEventListener) {
-      object.addEventListener(event, handler, false);
-    }
-    else if (object.attachEvent) {
-      object.attachEvent('on' + event, handler);
-    }
-    else alert("Обработчик не поддерживается");
-  }
-  // Добавляем обработчики для разных браузеров
-  addHandler(window, 'DOMMouseScroll', wheel);
-  addHandler(window, 'mousewheel', wheel);
-  addHandler(document, 'mousewheel', wheel);
-  // Функция, обрабатывающая событие
-  function wheel(event) {
-    var delta; // Направление колёсика мыши
-    event = event || window.event;
-    // Opera и IE работают со свойством wheelDelta
-    if (event.wheelDelta) { // В Opera и IE
-      delta = event.wheelDelta / 120;
-      // В Опере значение wheelDelta такое же, но с противоположным знаком
-      if (window.opera) delta = -delta; // Дополнительно для Opera
-    }
-    else if (event.detail) { // Для Gecko
-      delta = -event.detail / 3;
-    }
-    // Запрещаем обработку события браузером по умолчанию
-    if (event.preventDefault) event.preventDefault();
-    event.returnValue = false;
-    jQuery("document").ready(function(){
-    	if (delta==-1) {
-    $("#menu_hide").hide()
-   }
-     else {$("#menu_hide").show() 
-   }
- }
-)};
-</script>
-    }
-</script>
-
-
-	
-	
-	
 </body>
 </html>

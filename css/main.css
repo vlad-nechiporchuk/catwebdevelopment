@@ -1,80 +1,42 @@
+html {
+	height: 100%;
+}
 
+body {
+	padding: 0;
+	text-align: center;
+	position: relative;
+	margin: 0;
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+}
 
+.page2{
+background: red;
+}
 
-    
+.page3{
+background: green;
+}
 
-
-
-
-
-/*-------------------------------------------------------------------------------
-  2. Header
--------------------------------------------------------------------------------*/
+.wrapper {
+	height: 100% !important;
+	height: 100%;
+	margin: 0 auto; 
+	overflow: hidden;
+}
 
 .navbar{
-opacity: 0.8;
-background: white;
-  position:absolute;
-  top:0;
-  left:0;
-  z-index: 9999;
-  width: 100%;
-  border-radius: 0;
-  font-size: 15px;
-    
-}
-
-
-.lead{
-  font-size: initial;
-  margin:20px 0 0;
-  color:#6a6a6a;
+	height: 30px;	
+	opacity: 0.7;
+	background: white;
+	top:0;
+	left:0;
+	z-index: 9999;
+	width: 100%;
+	border-radius: 0;
+	font-size: 15px;
 }
 
 
 
-
-.section:first-child {
-
-  background: #6784ff;
-}
-
-.section:nth-child(2) {
-  background: #edff67;
-}
-
-.section:last-child {
-  background: #76ff7c;
-}
-
-
-/*Меню*/
-.navbar {
-  min-height: 40px;
-}
-.n-navigation{
-position: relative;
-margin: 25%;
-zoom: 2;
-opacity: 1;
-}
-.n-navigation:hover{
-right: 0.5px;
-border-radius: 50%;
-box-shadow: 0 0 2px rgba(0,0,0,0.1);
-zoom: 2.2;
-
-}
-
-.right-navigation{
-height: 130px;
-width: 50px;
-border-radius: 35%;
-background: white;
-opacity: 0.6;
-text-decoration: : none;
-top: 45%;
-z-index: 99999;
-position: absolute;
-right: 0.7%;
-}
