@@ -36,6 +36,7 @@ background: green;
 	width: 100%;
 	border-radius: 0;
 	font-size: 15px;
+	position: relative;
 }
 
 .summary-block{
@@ -50,8 +51,7 @@ background: green;
 	padding: 0;
 }
 
-.summary-block1{
-	width: 100%;
+.summary-block-show{
 	height: 40vh;
 }
 
@@ -60,13 +60,13 @@ background: green;
 	-moz-box-shadow: -1px 0px 16px 1px rgba(0,0,0,0.75);
 	box-shadow: -1px 0px 16px 1px rgba(0,0,0,0.75);
 	transition-property: opacity;
-	transition-duration: 1.5s;
+	transition-duration: 1s;
 	opacity: 1;
 }
 
 .show:hover{
 	transition-property: opacity;
-	transition-duration: 1s;
+	transition-duration: 0.5s;
 	opacity: 0.3;
 }
 
