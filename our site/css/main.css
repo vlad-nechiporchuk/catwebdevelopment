@@ -10,13 +10,13 @@ body {
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
 }
+.page0{
+}
 
 .page2{
-background: red;
 }
 
 .page3{
-background: green;
 }
 
 .wrapper {
@@ -45,6 +45,42 @@ background: green;
 
 .horizontal{
 	height: 5vh;
+}
+
+.caption{
+	height: 13vh;
+}
+
+.caption span{
+	font-size: 17pt;
+	margin-top: 4vh;
+	margin-left:10%; 
+	float: left;
+}
+
+.caption a{
+	font-size: 14pt;
+	margin-top: 4vh;
+	margin-right:10%; 
+	float: right;
+}
+
+.ident{
+	height: 10vh;
+}
+
+.caption1{
+	height: 10vh;
+} 
+
+.caption2{
+	height: 7vh;
+}
+
+.icon-jobs{
+margin: 1px;
+background: black;  
+height: 34vh;
 }
 
 .col-md-12{
