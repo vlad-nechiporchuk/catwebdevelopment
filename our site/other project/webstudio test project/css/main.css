@@ -36,6 +36,19 @@ input{
   margin:0;
 }
 
+.logo{
+  position: absolute;
+  margin-top: 4vh;
+}
+
+.head{
+  margin-top: 3vh;
+}
+
+.nav-menu ul li a:active{
+  border-image: url(images/bg-image.png) 30 round round;
+}
+
 .liner{
 }
 .scroll{

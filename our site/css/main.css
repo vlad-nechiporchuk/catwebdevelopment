@@ -10,6 +10,55 @@ body {
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
 }
+
+hr{
+	border-style: inset;
+	border: 0;
+    height: 2px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+a{
+	color:black;
+	transition-property: color;
+	transition-duration: 0.3s;
+}
+
+a:hover{
+	color:grey;
+	transition-property: color;
+	transition-duration: 0.3s;
+}
+
+a:focus .hr{
+	overflow: hidden;
+	opacity: 1;
+}
+
+.hr{
+	opacity: 0;
+	border-color: #9acdcd;
+	background: #9acdcd;	
+	height: 2px;
+	top: 1px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	z-index: 99; 
+	color: #9acdcd;
+}
+
+.logo img{
+	float: left;
+	height: 8vh;
+	width: 13vw;
+}
+
 .page0{
 }
 
@@ -27,6 +76,9 @@ body {
 }
 
 .navbar{
+	margin-top: 3px;
+	margin-bottom: -7px;
+	bottom: 0;
 	height: 30px;	
 	opacity: 0.7;
 	background: white;
@@ -77,11 +129,23 @@ body {
 	height: 7vh;
 }
 
-.icon-jobs{
-margin: 1px;
-background: black;  
-height: 34vh;
+.jobs{
+
 }
+
+.icon-jobs{
+	margin-right: 1%;
+	height: 35vh;
+}
+
+.img-jobs{
+	position: absolute;
+	right: 1vw;
+	width: 100%;
+	z-index: 1;
+	zoom:1;
+}
+
 
 .col-md-12{
 	padding: 0;
@@ -107,3 +171,29 @@ height: 34vh;
 }
 
 
+
+
+.img-hide{
+	right: 1vw;
+	position: absolute;
+	width: 100%; 
+	z-index: 9999;
+	transition-property: opacity;
+	transition-duration: 0.3s;
+	opacity: 1;
+
+}
+
+.img-hide:hover{
+	transition-property: opacity;
+	transition-duration: 0.3s;
+	opacity: 0;
+}
+
+
+.img-jobs:hover{
+	zoom:2;
+	transition-property: opacity;
+	transition-duration: 0.3s;
+	opacity: 0;
+}
