@@ -81,7 +81,6 @@ a:focus .hr{
 	bottom: 0;
 	height: 30px;	
 	opacity: 0.7;
-	background: white;
 	top:0;
 	left:0;
 	z-index: 9999;
@@ -90,6 +89,10 @@ a:focus .hr{
 	font-size: 15px;
 	position: relative;
 }
+
+
+
+
 
 .summary-block{
 	height: 40vh;
@@ -188,12 +191,12 @@ a:focus .hr{
 	transition-property: opacity;
 	transition-duration: 0.3s;
 	opacity: 0;
+
 }
 
 
 .img-jobs:hover{
-	zoom:2;
 	transition-property: opacity;
 	transition-duration: 0.3s;
-	opacity: 0;
+	
 }
