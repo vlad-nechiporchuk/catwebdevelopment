@@ -55,7 +55,7 @@ a:focus .hr{
 
 .logo img{
 	float: left;
-	height: 8vh;
+	height: 7.2vh;
 	width: 13vw;
 }
 
@@ -165,6 +165,44 @@ a:focus .hr{
 	transition-property: opacity;
 	transition-duration: 1s;
 	opacity: 1;
+}
+
+.footer{
+	background: #6a6a6a;
+	height: 45vh;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.block-footer{
+height: 32vh;
+}
+
+.block-footer hr{
+color: white;
+background: white;
+height: 0.5px;
+}
+
+.block-footer h3{
+	text-align: left;
+}
+
+
+
+.rights{
+	padding: 0;
+	margin: 0;
+	text-align:left;
+	bottom: 0;
+	position: absolute;
+	width: 110%;
+	background: #9acdcd;
+	color: #6a6a6a;
+}
+.rights div div span h4{
+	margin-left: 3.3%;
 }
 
 .show:hover{
