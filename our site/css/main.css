@@ -15,10 +15,10 @@ hr{
 	border-style: inset;
 	border: 0;
     height: 2px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.001), rgba(0,0,0,0.1), rgba(0,0,0,0.001)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0.001), rgba(0,0,0,0.1), rgba(0,0,0,0.001)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0.001), rgba(0,0,0,0.1), rgba(0,0,0,0.001)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0.001), rgba(0,0,0,0.1), rgba(0,0,0,0.001));
 }
 
 a{
@@ -39,9 +39,10 @@ a:focus .hr{
 }
 
 .hr{
-	opacity: 0;
-	border-color: #9acdcd;
-	background: #9acdcd;	
+	border-color:#9acdcd; 
+	color:#9acdcd;
+	background-color: #9acdcd;
+	opacity: 0;	
 	height: 2px;
 	top: 1px;
 	padding: 0;
