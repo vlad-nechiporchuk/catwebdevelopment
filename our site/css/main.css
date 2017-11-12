@@ -277,7 +277,6 @@ height: 0.5px;
 /* Footer*/
 
 #footer{
-	background: #6a6a6a;
 	height:40vh;
 	bottom: 0;
 	position: absolute;
@@ -296,7 +295,7 @@ height: 0.5px;
 
 }
 .footer-text{
-	color: #fff;
+	color: #000;
 	color:15px;
 }
 
