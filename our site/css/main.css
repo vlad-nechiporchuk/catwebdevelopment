@@ -1,3 +1,6 @@
+
+
+
 html {
 	height: 100%;
 }
@@ -11,12 +14,62 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+
+a{
+	color:black;
+	transition-property: color;
+	transition-duration: 0.3s;
+}
+
+a:hover{
+	color:grey;
+	transition-property: color;
+	transition-duration: 0.3s;
+}
+
+a:focus .hr{
+	overflow: hidden;
+	opacity: 1;
+}
+
+
+.hr-jobs{
+	width: 100%; 
+	background-color: #9acdcd; 
+	border-color: #9acdcd;
+	display: block;
+	margin-bottom: 0px;
+}
+
+.hr{
+	border-color:#9acdcd; 
+	color:#9acdcd;
+	background-color: #9acdcd;
+	opacity: 0;	
+	height: 2px;
+	top: 1px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	z-index: 99; 
+	color: #9acdcd;
+}
+
+.logo img{
+	float: left;
+	height: 7.2vh;
+	width: 13vw;
+}
+
+.page0{
+}
+
 .page2{
-background: red;
 }
 
 .page3{
-background: green;
 }
 
 .wrapper {
@@ -27,16 +80,23 @@ background: green;
 }
 
 .navbar{
+	margin-top: 3px;
+	margin-bottom: -7px;
+	bottom: 0;
 	height: 30px;	
 	opacity: 0.7;
-	background: white;
 	top:0;
 	left:0;
 	z-index: 9999;
 	width: 100%;
 	border-radius: 0;
 	font-size: 15px;
+	position: relative;
 }
+
+
+
+
 
 .summary-block{
 	height: 40vh;
@@ -46,12 +106,59 @@ background: green;
 	height: 5vh;
 }
 
+.caption{
+	height: 13vh;
+}
+
+.caption span{
+	font-size: 17pt;
+	margin-top: 4vh;
+	margin-left:10%; 
+	float: left;
+}
+
+.caption a{
+	font-size: 14pt;
+	margin-top: 4vh;
+	margin-right:10%; 
+	float: right;
+}
+
+.ident{
+	height: 10vh;
+}
+
+.caption1{
+	height: 10vh;
+} 
+
+.caption2{
+	height: 7vh;
+}
+
+.jobs{
+
+}
+
+.icon-jobs{
+	margin-right: 1%;
+	height: 35vh;
+}
+
+.img-jobs{
+	position: absolute;
+	right: 1vw;
+	width: 100%;
+	z-index: 1;
+	zoom:1;
+}
+
+
 .col-md-12{
 	padding: 0;
 }
 
-.summary-block1{
-	width: 100%;
+.summary-block-show{
 	height: 40vh;
 }
 
@@ -60,14 +167,106 @@ background: green;
 	-moz-box-shadow: -1px 0px 16px 1px rgba(0,0,0,0.75);
 	box-shadow: -1px 0px 16px 1px rgba(0,0,0,0.75);
 	transition-property: opacity;
-	transition-duration: 1.5s;
+	transition-duration: 1s;
 	opacity: 1;
+}
+
+.footer{
+	background: #6a6a6a;
+	height: 45vh;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.block-footer{
+height: 32vh;
+}
+
+.block-footer hr{
+color: white;
+background: white;
+height: 0.5px;
+}
+
+.block-footer h3{
+	text-align: left;
+}
+
+
+
+.rights{
+	padding: 0;
+	margin: 0;
+	text-align:left;
+	bottom: 0;
+	position: absolute;
+	width: 110%;
+	background: #9acdcd;
+	color: #6a6a6a;
+}
+.rights div div span h4{
+	margin-left: 3.3%;
 }
 
 .show:hover{
 	transition-property: opacity;
-	transition-duration: 1s;
+	transition-duration: 0.5s;
 	opacity: 0.3;
 }
 
+
+
+
+.img-hide{
+	right: 1vw;
+	position: absolute;
+	width: 100%; 
+	z-index: 9999;
+	transition-property: opacity;
+	transition-duration: 1s;
+	opacity: 1;
+
+}
+
+.img-hide:hover{
+	transition-property: opacity;
+	transition-duration: 1s;
+	opacity: 0;
+
+}
+.main-button{
+	
+  padding:10px 30px;
+  border-radius: 10px;
+  border:1px solid transparent;
+  background-color: #f3cb00;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: normal;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all .3s ease-out;
+       -o-transition: all .3s ease-out;
+          transition: all .3s ease-out;
+
+}
+.main-button:hover
+ {
+  background: linear-gradient(to bottom, #6a6a6a 0%, #9acdcd 100%, #fff 20%);
+  border-radius: 20px;
+}
+.main-button:focus,
+.main-button:active:focus,
+.main-button:focus,
+.main-button:hover
+ {
+  outline:none;
+}
+.button-position{
+	padding-top:30px;
+	 padding-left:1000px;
+	 margin-right: 2%;
+}
 
