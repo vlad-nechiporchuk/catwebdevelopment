@@ -1,6 +1,7 @@
 
 
 
+
 html {
 	height: 100%;
 }
@@ -270,4 +271,33 @@ height: 0.5px;
 	 margin-right: 2%;
 }
 
+/* Footer*/
+
+#footer{
+	background: black;
+	height:40vh;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+
+}
+.logo-footer{
+	width: 200px;
+	height: 100px;
+}
+.footer-img{
+   height: 50px;
+   width: 50px;
+   margin-bottom:12px;
+   margin-top: 20px;
+
+}
+.footer-text{
+	color: #fff;
+	color:15px;
+}
+.facebook{
+	width: 30px;
+	height: 30px;
+}
 
