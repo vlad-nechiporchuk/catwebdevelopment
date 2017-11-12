@@ -277,7 +277,7 @@ height: 0.5px;
 /* Footer*/
 
 #footer{
-	background: black;
+	background: #6a6a6a;
 	height:40vh;
 	bottom: 0;
 	position: absolute;
@@ -299,8 +299,5 @@ height: 0.5px;
 	color: #fff;
 	color:15px;
 }
-.facebook{
-	width: 30px;
-	height: 30px;
-}
+
 
