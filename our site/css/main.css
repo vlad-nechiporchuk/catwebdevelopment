@@ -239,25 +239,27 @@ height: 0.5px;
 .main-button{
 	
   padding:10px 30px;
-  border-radius: 10px;
-  border:1px solid transparent;
-  background-color: #f3cb00;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #f3cb00, #f3cb00 85%, #808080 100%);
   font-size: 17px;
   line-height: 1.4;
   font-weight: normal;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all .3s ease-out;
-       -o-transition: all .3s ease-out;
-          transition: all .3s ease-out;
+          transition-property: background;
+          transition-duration: 2s;
 
 }
-.main-button:hover
+.main-button:active
  {
-  background: linear-gradient(to bottom, #6a6a6a 0%, #9acdcd 100%, #fff 20%);
-  border-radius: 20px;
+  background: linear-gradient(to bottom, #f3cb00, #f3cb00 89%, #808080 100%);
+  border-radius: 25px;
+
 }
+
+
+
 .main-button:focus,
 .main-button:active:focus,
 .main-button:focus,
@@ -269,6 +271,7 @@ height: 0.5px;
 	padding-top:30px;
 	 
 	 margin-right: 2%;
+
 }
 
 /* Footer*/
