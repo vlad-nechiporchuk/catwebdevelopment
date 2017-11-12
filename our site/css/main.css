@@ -1,3 +1,6 @@
+
+
+
 html {
 	height: 100%;
 }
@@ -11,15 +14,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-hr{
-	border-style: inset;
-	border: 0;
-    height: 2px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.001), rgba(0,0,0,0.1), rgba(0,0,0,0.001)); 
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0.001), rgba(0,0,0,0.1), rgba(0,0,0,0.001)); 
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0.001), rgba(0,0,0,0.1), rgba(0,0,0,0.001)); 
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0.001), rgba(0,0,0,0.1), rgba(0,0,0,0.001));
-}
 
 a{
 	color:black;
@@ -36,6 +30,15 @@ a:hover{
 a:focus .hr{
 	overflow: hidden;
 	opacity: 1;
+}
+
+
+.hr-jobs{
+	width: 100%; 
+	background-color: #9acdcd; 
+	border-color: #9acdcd;
+	display: block;
+	margin-bottom: 0px;
 }
 
 .hr{
@@ -221,21 +224,15 @@ height: 0.5px;
 	width: 100%; 
 	z-index: 9999;
 	transition-property: opacity;
-	transition-duration: 0.3s;
+	transition-duration: 1s;
 	opacity: 1;
 
 }
 
 .img-hide:hover{
 	transition-property: opacity;
-	transition-duration: 0.3s;
+	transition-duration: 1s;
 	opacity: 0;
 
 }
 
-
-.img-jobs:hover{
-	transition-property: opacity;
-	transition-duration: 0.3s;
-	
-}
