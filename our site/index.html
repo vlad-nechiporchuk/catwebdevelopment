@@ -32,11 +32,40 @@ new WOW().init();
             });
 		});
     </script>
+
+    <!--Плагин поблочной прокрутки:"one page-scroll"-->
+   <script> 
+         
+$(window).load(function(){
+        $('body').addClass('loaded');	
+		$('.loader').fadeOut(3000);
+	});
+</script>
+
+    <!--Убираем лоадера"-->
+
 <!--дополнительные скрипты-->
 <!--скрипт на клик-->
 </head>
 <body>
 <!--шапка-->
+
+	<!-- Loader -->
+
+	<div id="loader" class="loader">
+		<div class="cssload-bell">
+			<div class="cssload-circle">
+				<div class="cssload-inner"></div>
+			</div>
+			<div class="cssload-circle">
+				<div class="cssload-inner"></div>
+			</div>	
+			<div class="cssload-circle">
+				<div class="cssload-inner"></div>
+			</div>	
+			
+		</div>
+	</div>
  
 <!--Блоки прокрутки-->
 <div class="wrapper">
@@ -316,7 +345,7 @@ new WOW().init();
 	 <!--Footer-->
 <section id="">
 	
-		<div class="container page_container" id="footer">
+		<div class="container page_container" id="footer" style="background: url(images/development-bg.png), linear-gradient(to top, #F2F3F4 0%, #F2F3F4 98%, 	#ffffff 100%);">
 	      
 		<div class="container">
 			<div class="row">
