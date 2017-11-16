@@ -17,20 +17,12 @@ body {
 
 
 a{
-	color:black;
-	transition-property: color;
-	transition-duration: 0.3s;
-}
-
-a:hover{
-	color:grey;
-	transition-property: color;
-	transition-duration: 0.3s;
 }
 
 a:focus .hr{
 	overflow: hidden;
 	opacity: 1;
+
 }
 
 
@@ -81,6 +73,7 @@ a:focus .hr{
 }
 
 .navbar{
+
 	margin-top: 3px;
 	margin-bottom: -7px;
 	bottom: 0;
@@ -94,8 +87,12 @@ a:focus .hr{
 	font-size: 15px;
 	position: relative;
 }
+.nav li a{
+	color: white;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.2vw;
 
-
+}
 
 
 
@@ -142,17 +139,17 @@ a:focus .hr{
 }
 
 .icon-jobs{
+
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
+	color: white;
 	margin-right: 1%;
 	height: 35vh;
 }
 
-.img-jobs{
-	position: absolute;
-	right: 1vw;
-	width: 100%;
-	z-index: 1;
-	zoom:1;
+.icon-jobs a{
+	color: white;
 }
+
 
 
 .col-md-12{
@@ -216,35 +213,36 @@ height: 0.5px;
 	opacity: 0.3;
 }
 
+.dropdown:hover > .dropdown-menu { 	
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
 
+
+} 
 
 
 .img-hide{
-	right: 1vw;
-	position: absolute;
-	width: 100%; 
+	width: 65%; 
 	z-index: 9999;
-	transition-property: opacity;
-	transition-duration: 1s;
 	opacity: 1;
 
 }
 
 .img-hide:hover{
-	transition-property: opacity;
-	transition-duration: 1s;
-	opacity: 0;
+	
 
 }
 .main-button{
 	
   padding:10px 30px;
   border-radius: 25px;
-  background: linear-gradient(to bottom, #f3cb00, #f3cb00 89%, #808080 96%,  #808080 100%);
-  font-size: 17px;
-  line-height: 1.4;
+  background: linear-gradient(to bottom, #F5EE82, #F5EE82 89%, #808080 96%,  #808080 100%);
+  font-weight: 900;
+  font-family:  sans-serif; font-size: 1.5vw; 
+  line-height: 1;
   font-weight: normal;
-  color: #fff;
+  color: #3A3A3A;
   text-decoration: none;
   text-transform: uppercase;
           transition-property: background;
