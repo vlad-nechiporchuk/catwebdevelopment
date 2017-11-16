@@ -132,10 +132,6 @@ a:focus .hr{
 }
 
 .icon-jobs{
-
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
-	color: white;
-	margin-right: 1%;
 	height: 35vh;
 }
 
@@ -239,13 +235,17 @@ height: 0.5px;
 
 .dropdown{
 	border-bottom: #9acdcd 2px solid;
-	bottom: 0%;
+	top: 50px;
 }
 
 .img-hide{
-	width: 65%; 
+	width: 55%; 
 	z-index: 9999;
 	opacity: 1;
+
+}
+
+.secondCaption{
 
 }
 
