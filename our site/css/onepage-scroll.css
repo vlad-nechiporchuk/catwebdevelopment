@@ -31,13 +31,14 @@ body, .onepage-wrapper, html {
 .onepage-pagination {
   position: absolute;
   right: 10px;
-  top: 50%;
+  top: 35%;
   z-index: 5;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 .onepage-pagination li {
+  margin-bottom: 15px;
   padding: 0;
   text-align: center;
 }
@@ -51,19 +52,19 @@ body, .onepage-wrapper, html {
 .onepage-pagination li a:before{
   content: '';
   position: absolute;
-  width: 4px;
-  height: 4px;
-  background: rgba(0,0,0,0.85);
+  width: 10px;
+  height: 10px;
+  background: #F5EE82;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
 
 .onepage-pagination li a.active:before{
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background: none;
-  border: 1px solid black;
+  border: 2px solid #F5EE82;
   margin-top: -4px;
   left: 8px;
 }
