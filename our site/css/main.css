@@ -26,13 +26,6 @@ a:focus .hr{
 }
 
 
-.hr-jobs{
-	width: 100%; 
-	background-color: #9acdcd; 
-	border-color: #9acdcd;
-	display: block;
-	margin-bottom: 0px;
-}
 
 .hr{
 	border-color:#9acdcd; 
@@ -216,11 +209,38 @@ height: 0.5px;
 .dropdown:hover > .dropdown-menu { 	
   opacity: 1;
   visibility: visible;
-  transition-delay: 0s;
+  transition: opacity 0.5s, visibility 1s, linear 0.5s;
+
 
 
 } 
 
+.dropdown-menu {
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0s, linear 0.5s;
+  float: left;
+  width: 103%;
+  margin-top: -2px;
+  margin-left: -1%; 
+  padding: 3px;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #9acdcd;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.dropdown{
+	border-bottom: #9acdcd 2px solid;
+	bottom: 0%;
+}
 
 .img-hide{
 	width: 65%; 
@@ -273,12 +293,8 @@ height: 0.5px;
 }
 
 /* Footer*/
-
 #footer{
-<<<<<<< HEAD
 	background: black;
-=======
->>>>>>> a138e90302f480ec438ee98338f809e0dc59f0c8
 	height:40vh;
 	bottom: 0;
 	position: absolute;
@@ -301,6 +317,7 @@ height: 0.5px;
 	color:15px;
 }
 /* 1.6 Loader */
+/*plugin loader*/
 
 
 
@@ -314,6 +331,8 @@ height: 0.5px;
   z-index: 100;
   text-align: center;
 }
+
+
 
 .cssload-bell {
   position: absolute;
