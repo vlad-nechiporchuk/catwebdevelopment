@@ -3504,29 +3504,7 @@ tbody.collapse.in {
 .dropdown-toggle:focus {
   outline: 0;
 }
-.dropdown-menu {
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0s linear 0.5s;
-  float: left;
-  width: 103%;
-  margin-top: -2px;
-  margin-left: -1%; 
-  padding: 3px;
-  font-size: 14px;
-  text-align: left;
-  list-style: none;
-  background-color: #9acdcd;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  border: 2px solid #ccc;
-  border: 2px solid rgba(0, 0, 0, .15);
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-}
+
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;

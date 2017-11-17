@@ -212,16 +212,16 @@ height: 0.5px;
 } 
 
 .dropdown-menu {
-  top: 100%;
+  height: 50px; 
+  overflow: hidden; 
+  border: 1px solid #9acdcd;
   left: 0;
   z-index: 1;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s, visibility 0s, linear 0.5s;
   float: left;
-  width: 103%;
-  margin-top: -2px;
-  margin-left: -1%; 
+  width: 100%;
   padding: 3px;
   font-size: 14px;
   text-align: left;
@@ -229,8 +229,6 @@ height: 0.5px;
   background-color: #9acdcd;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
 
 .dropdown{
@@ -292,6 +290,69 @@ height: 0.5px;
 
 }
 
+
+/*3-rd slide*/
+.first-info-block, .second-info-block{
+	border: 1px solid black;
+	margin-right: 2%;
+	margin-top: 9vw;
+}
+
+.show-hide{
+	overflow: hidden;
+	height: 80px;
+	width: 100%;
+	right: auto;
+}
+
+.hide-block{
+	
+	height: 250px;
+	padding: 5px;
+}
+
+.image{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	width: 100px;
+	background: red;
+}
+
+.designer-block{
+	border-bottom: 1px solid grey;
+}
+
+.hide-text{
+	opacity: 1;
+	position: relative;
+	transition-property: margin-top opacity;
+          transition-duration: 1.2s;
+}
+
+.show-text{
+	margin-top: 85px;
+	position: relative;
+	opacity: 0;
+	transition-property: opacity;
+          transition-duration: 0.5s;
+}
+
+.hide-block:hover .hide-text{
+	margin-top: -100px;
+	opacity: 0;
+	transition-property: margin-top opacity;
+          transition-duration: 0.8s;
+}
+
+.hide-block:hover .show-text{
+	transition-property: opacity;
+    transition-duration: 2.5s;
+	opacity: 1;
+	bottom: 0;
+}
 /* Footer*/
 #footer{
 	background: black;
