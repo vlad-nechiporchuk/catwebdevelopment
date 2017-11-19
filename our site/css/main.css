@@ -202,38 +202,49 @@ height: 0.5px;
 	opacity: 0.3;
 }
 
-.dropdown:hover > .dropdown-menu { 	
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s, visibility 1s, linear 0.5s;
-
-
-
-} 
-
-.dropdown-menu {
-  height: 50px; 
-  overflow: hidden; 
-  border: 1px solid #9acdcd;
-  left: 0;
-  z-index: 1;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0s, linear 0.5s;
-  float: left;
-  width: 100%;
-  padding: 3px;
-  font-size: 14px;
-  text-align: left;
-  list-style: none;
-  background-color: #9acdcd;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
+.one{
+	overflow: hidden;
+	height: 50px;
+	width: 100%;
 }
 
-.dropdown{
-	border-bottom: #9acdcd 2px solid;
-	top: 50px;
+.two{
+	padding: 10px;
+	width: 100%;
+	margin-top: -50px;
+	height: 50px;
+	background: #9acdcd;
+	transition: margin-top 1.2s 0s;
+	
+}
+.text-show{
+	opacity: 0;
+}
+.rel:hover .text-show{
+	transition: opacity 0.5s 1.9s;
+	opacity: 1;
+}
+
+.rel:hover .two{
+	transition: margin-top 1.2s 1.2s;
+	margin-top: 0px;
+}
+
+.h123{
+	margin-top: 0px;
+	opacity: 0;
+	float: left;
+	width: 0px;
+	border: 1px solid #9acdcd;
+	background: #9acdcd;
+	color: #9acdcd;
+}
+
+.icon-jobs div div:hover .h123{
+transition: width 1.2s;
+width: 100%;
+opacity: 1;
+
 }
 
 .img-hide{
