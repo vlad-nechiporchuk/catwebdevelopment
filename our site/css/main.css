@@ -136,6 +136,7 @@ a:focus .hr{
 }
 
 .icon-jobs a{
+	top: 50px;
 	color: white;
 }
 
@@ -202,6 +203,13 @@ height: 0.5px;
 	opacity: 0.3;
 }
 
+.text-one-page{
+display: block;
+margin-top: 25px;
+float: center;
+
+}
+
 .one{
 	overflow: hidden;
 	height: 50px;
@@ -218,10 +226,11 @@ height: 0.5px;
 	
 }
 .text-show{
+	transition: opacity 0.5s;
 	opacity: 0;
 }
 .rel:hover .text-show{
-	transition: opacity 0.25s 0.95s;
+	transition: opacity 0.4s 0.85s;
 	opacity: 1;
 }
 
