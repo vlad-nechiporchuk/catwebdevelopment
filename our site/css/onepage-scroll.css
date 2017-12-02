@@ -43,30 +43,41 @@ body, .onepage-wrapper, html {
   text-align: center;
 }
 .onepage-pagination li a{
-  padding: 10px;
-  width: 4px;
-  height: 4px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  width: 10px;
+  height: 10px;
   display: block;
   
 }
 .onepage-pagination li a:before{
   content: '';
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 1px;
   background: #F5EE82;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  border-bottom: 1px solid #b3d4fc;
 }
 
 .onepage-pagination li a.active:before{
-  width: 15px;
-  height: 15px;
+  width: 35px;
+  height: 1px;
   background: none;
-  border: 2px solid #F5EE82;
-  margin-top: -4px;
-  left: 8px;
+  border-bottom: 2px solid white;
+  margin-top: -1px;
+  left: 14.5px;
+}
+
+.onepage-pagination li a:hover:before{
+  width: 35px;
+  height: 1px;
+  background: none;
+  border-bottom: 2px solid white;
+  margin-top: -1px;
+  left: 17px;
+  transition: all 0.1s;
 }
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {

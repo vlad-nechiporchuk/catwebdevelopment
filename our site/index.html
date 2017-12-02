@@ -9,6 +9,7 @@
   <script src="https://use.fontawesome.com/bd55a35307.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Cormorant|Montserrat+Alternates" rel="stylesheet">
@@ -35,115 +36,121 @@ new WOW().init();
     </script>
 
     <!--Плагин поблочной прокрутки:"one page-scroll"-->
-   <script> 
-         
-$(window).load(function(){
-        $('body').addClass('loaded');	
-		$('.loader').fadeOut(3000);
-	});
-</script>
+
+
 
 
 
     <!--Убираем лоадера"-->
 
+
+
+
 <!--дополнительные скрипты-->
 
 <!--скрипт на клик-->
 </head>
-<body>
 
-	
+<body onload="timer(),position()" >
+
+<div id="preloader_first" class="preloader_first" >
+  <div class="text_preloader" id="text_preloader"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i>WEBCAT<span style="font-size: 25px">studio</span>
+     <hr id="hr_preloader" >
+  </div>
+  </div>
+  <div id="preloader_second" class="preloader_second">
+    
+  </div>
+
 <!--шапка-->
 <div id="slide_menu_open" class="slide_menu_open" onclick="slide_menu_open()"> 
-    <span id="toglle_element" class="toglle_element"></span>
-    <span id="toglle_element" class="toglle_element"></span>
-    <span id="toglle_element" class="toglle_element"></span>
- </div>
- <div id="slide_menu" class="slide_menu">
-        	<div>
-            	<a href="#header" class="header_button">
-            	Главная
-            	<hr class="hr">
-            	</a>
-        	</div>
-        	<div>
-            	<a href="#about" class="header_button">
-              	Услуги
-              	<hr class="hr">
-            	</a>
-        	</div>
-        	<div>
-            	<a href="#portfolio" class="header_button">
-              	Наши работы
-              	<hr class="hr">
-            	</a>
-			</div>
-			<div>
-				<a href="#prices" class="header_button">
-				Цены
-				<hr class="hr">
-				</a>
-			</div>
-			<div>
-				<a href="#about" class="header_button">
-				О компании
-				<hr class="hr">
-				</a>
-			</div>
-			<div>
-				<a href="#contacts" class="header_button">
-				Контакты
-				<hr class="hr">
-				</a>
-			</div> 
+    <span id="toglle_element_0" class="toglle_element_0"></span>
+    <span id="toglle_element_1" class="toglle_element_1"></span>
+    <span id="toglle_element_2" class="toglle_element_2"></span>
+    <span id="toglle_element_3" class="toglle_element_3">МЕНЮ</span>
+    <span id="toglle_element_4" class="toglle_element_4">ЗАКРЫТЬ</span>
+</div>
+<div id="header"  class="header-hide">
+</div>
+<div class="logo">
+		<img src="images/web-cat1.png" >
+</div>
+<div id="slide_menu" class="slide_menu">
+	<div style="margin-left: 10px; margin-top: 21px;"><div class="text-logo-big" >  <a href="#portfolio" id="text_logo_big"><span
+     class="txt-rotate"
+     data-period="50"
+     data-rotate='[" WEBCAT<i>studio</i>" ]'></span></a></div></div>
+ 	<div class="margin-top-slide-right">
+    	<ul class="hover-tag" >
+        	<a href="#1" id="go_to_slide0" class="header_button" onclick="go_to_slide0()">
+        	<i class="fa fa-home" aria-hidden="true" ></i>Главная
+        	</a>
+        <hr class="hr">
+    	</ul>
+    	<ul class="hover-tag">
+        	<a href="#portfolio" id="go_to_slide1"  class="header_button" onclick="go_to_slide1()">
+          	<i class="fa fa-folder-open-o" aria-hidden="true"></i>Наши работы
+            </a>
+        <hr class="hr">
+		</ul>
+		<ul class="hover-tag">
+        	<a href="#about" id="go_to_slide2"  class="header_button" onclick="go_to_slide2()">
+          	<i class="fa fa-sliders" aria-hidden="true"></i>Услуги
+          	</a>
+        <hr class="hr">
+    	</ul>
+    	<!--
+		<ul class="hover-tag">
+			<a href="#prices" id="go_to_slide0"  class="header_button" onclick="go_to_slide3()">
+			<i class="fa fa-money" aria-hidden="true"></i>Цены
+	        </a>
+        <hr class="hr">
+		</ul>-->
+		<ul class="hover-tag">
+			<a href="#about" id="go_to_slide3"  class="header_button" onclick="go_to_slide3()">
+			<i class="fa fa-handshake-o" aria-hidden="true"></i>О компании
+        	</a>
+        <hr class="hr">
+		</ul>
+		<ul class="hover-tag">
+			<a href="#contacts" id="go_to_slide4"  class="header_button" onclick="go_to_slide4()">
+			<i class="fa fa-address-card-o" aria-hidden="true"></i>Контакты
+        	</a>
+        <hr class="hr">
+		</ul> 
+	</div>
+	<div class="slide_menu_bott">
+		<div ><a href="#"  id="slide_menu_bott"><i class="fa fa-facebook-square" aria-hidden="true" ></i></a></div>
+
+		<div><a href="#" id="slide_menu_bott1"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+</div>
+		<div>
+				<a href="#" id="slide_menu_bott2"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+		</div>
+	</div>
 </div>
 	<!-- Loader -->
 
-	<div id="loader" class="loader">
-		<div class="cssload-bell">
-			<div class="cssload-circle">
-				<div class="cssload-inner"></div>
-			</div>
-			<div class="cssload-circle">
-				<div class="cssload-inner"></div>
-			</div>
-			<div class="cssload-circle">
-				<div class="cssload-inner"></div>
-			</div>
-
-			
-		</div>
-	</div>
  
 <!--Блоки прокрутки-->
 
 
-<div class="wrapper">
+<div class="wrapper" >
 
 
 	<div class="main">
 
-		<section class="page0 block" style="width: 100%; height: 100vh ;background: url(images/development-bg1.jpg);">
-			 
+		<section class="page0 block" style="width: 100%; height: 100vh ;background: url(images/development-bg.jpg);" >
+
 	
 
-			<header class="header" style="border-bottom: 1px solid rgba(105,191,206,.6);">
-			    <nav  class="navbar navbar-inverse">
-			        <div class="container">
-			        	<div class="logo">
-			        		<img src="images/logo/logo.png" >
-			        	</div>
-			        		
+			<!--<header class="header" style="border-bottom: 1px solid rgba(105,191,206,.6); z-index: 999;">-->
 
-			        </div>
-			    </nav>
- 			</header>
-			<div class="page_container" style="border-top: 1px solid rgba(255,255,255,.5);">
+			<div class="page_container" style="border-top: 1px solid rgba(255,255,255,.5);" >
 				<div class="col-md-12 col-lg-12 col-sm-12 ident"></div>
 				<div class="col-md-12 col-lg-12 col-sm-12 caption1">
-					<h1 style="color: white; font-family: 'Montserrat Alternates', sans-serif;
-   							   font-size: 3vw;text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">
+					<h1 style="color: white; font-family: Roboto, sans-serif;
+   							   font-size: 4vw;text-shadow: 2px 4px 3px rgba(0,0,0,0.3);">
 
    							   Разработка сайтов для бизнеса
    					</h1>
@@ -250,12 +257,12 @@ $(window).load(function(){
 	        			</div>
 	        		</div>
 
-	        			<!-- Add button -->
+	        			<!-- Add button 
 	        		<div class="row">
 	        			
-	        		<div class=" col-md-offset-4 col-md-3 button-position"> <button style="width:90%; margin-left:31%" type="button" class="main-button">Заказать</button></div>
-	        		</div>
-					<div class="col-md-1 col-lg-1 col-sm-1" style=" height: 30vh;"></div>
+	        		<div class=" col-md-offset-4 col-md-4 button-position"> <button style="width:50%; " type="button" class="main-button">Заказать</button></div>
+	        		</div>-->
+					<div class="col-md-12 col-lg-12 col-sm-12" style=" height: 30vh;"></div>
 				</div>
 			</div>
 		</section>
@@ -336,18 +343,18 @@ $(window).load(function(){
         	</div>
         </div>
    		</section>
-	    <section class="page2 block">
+	    <section class="page2 block" style="background: url(images/page3.jpg) !important;">
 	        <div class="page_container container">
 	        	<div class="row">
 	        		<div class="col-md-1 col-sm-1 col col-xs-1 col-lg-1" style="height: 500px;">
 
 	        			
 	        		</div>
-	        		<div class="col-md-5 col-sm-5 col col-xs-5 col-lg-5 first-info-block" style="height: 500px;">
+	        		<div class="col-md-5 col-sm-5 col col-xs-5 col-lg-5 first-info-block" id="first_info_block" style="height: 500px;">
 	        			<div class="col-md-12 col-sm-12 col col-xs-12 col-lg-12">	
 	        				<div class="designer-block hide-block">
-	        					<div class="img-designer image">
-	        					
+	        					<div class="img-design image">
+	        					<img src="images/design.png" >
 	        					</div>
 	        					<span><h4>Дизайн сайта</h4></span>
 	        					<div class="show-hide">
@@ -364,10 +371,10 @@ $(window).load(function(){
 	        					</div>
 	        				</div>
 	        				<div class="logo-block hide-block">
-	        					<div class="img-designer image">
-	        					
+	        					<div class="img-logo image">
+	        					<img src="images/logo.png" >
 	        					</div>
-	        					<span><h4>Дизайн сайта</h4></span>
+	        					<span><h4>Разработка логотипа</h4></span>
 	        					<div class="show-hide">
 		        					<div class="hide-text">
 		        						<span>
@@ -383,13 +390,13 @@ $(window).load(function(){
 	        				</div>
 	        			</div>
 	        		</div>
-	        		<div class="col-md-5 col-sm-5 col col-xs-5 col-lg-5 second-info-block" style="height: 500px;">
+	        		<div class="col-md-5 col-sm-5 col col-xs-5 col-lg-5 second-info-block" id="second_info_block" style="height: 500px;">
 	        			<div class="col-md-12 col-sm-12 col col-xs-12 col-lg-12">
 							<div class="designer-block hide-block">
-	        					<div class="img-designer image">
-	        					
+	        					<div class="img-seo image">
+	        					<img src="images/seo.png" >
 	        					</div>
-	        					<span><h4>Дизайн сайта</h4></span>
+	        					<span><h4>Раскрутка сайтов</h4></span>
 	        					<div class="show-hide">
 		        					<div class="hide-text">
 		        						<span>
@@ -404,10 +411,10 @@ $(window).load(function(){
 	        					</div>
 	        				</div>
 	        				<div class="logo-block hide-block">
-	        					<div class="img-designer image">
-	        					
+	        					<div class="img-adv image">
+	        					<img src="images/adv.png" >
 	        					</div>
-	        					<span><h4>Дизайн сайта</h4></span>
+	        					<span><h4>Контекстная реклама</h4></span>
 	        					<div class="show-hide">
 		        					<div class="hide-text">
 		        						<span>
