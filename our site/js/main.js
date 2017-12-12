@@ -10,7 +10,7 @@ function position(){
 opacity:0;\
   ";
 document.getElementById("hr_preloader").style.cssText="width: 100%; \
-opacity:1;\
+opacity:0;\
   "; 
    document.getElementById("preloader_second").style.cssText="right: 100%; \
 opacity:0;\
@@ -83,72 +83,78 @@ display: block;\
 }
 
 
+
  
 function timer(){
-setTimeout(function run() {
-	if(document.body.firstChild.childNodes[2].firstChild.classList.contains('active')){
- document.getElementById("first_info_block").style.cssText="margin-left: 7.5%; \
-left:0; \
-position:block;\
- ";
- document.getElementById("second_info_block").style.cssText=" margin-right: 7.5%;\
-right: 0;\
-position:block;\
- ";
+	setTimeout(function run() {
+		$(this.document.body.firstChild.childNodes[0]).attr('id', 'active0');
+		$(this.document.body.firstChild.childNodes[1]).attr('id', 'active1');
+		$(this.document.body.firstChild.childNodes[2]).attr('id', 'active2');
+		$(this.document.body.firstChild.childNodes[3]).attr('id', 'active3');
+		$(this.document.body.firstChild.childNodes[4]).attr('id', 'active4');
+		if(this.document.getElementById("active2").firstChild.classList.contains('active')){
+			document.getElementById("first_info_block").style.cssText="margin-left: 7.5%; \
+			left:0; \
+			position:block;\
+			";
+			document.getElementById("second_info_block").style.cssText=" margin-right: 7.5%;\
+			right: 0;\
+			position:block;\
+			";
 
-document.getElementById("slide_menu").style.background="white";
-document.getElementById("toglle_element_0").style.background="black";
-  document.getElementById("toglle_element_1").style.background="black";
-  document.getElementById("toglle_element_2").style.background="black";
- document.getElementById("toglle_element_3").style.color="black";
-  document.getElementById("toglle_element_4").style.color="black";
-    document.getElementById("text_logo_big").style.color="black";
-	document.getElementById("go_to_slide0").style.color="black";
-	document.getElementById("go_to_slide1").style.color="black";
-	document.getElementById("go_to_slide2").style.color="black";
-	document.getElementById("go_to_slide3").style.color="black";
-	document.getElementById("go_to_slide4").style.color="black";
-	document.getElementById('slide_menu_bott').style.color="black";
-	document.getElementById('slide_menu_bott1').style.color="black";
-	document.getElementById('slide_menu_bott2').style.color="black";
+			document.getElementById("slide_menu").style.background="white";
+			document.getElementById("toglle_element_0").style.background="black";
+			document.getElementById("toglle_element_1").style.background="black";
+			document.getElementById("toglle_element_2").style.background="black";
+			document.getElementById("toglle_element_3").style.color="black";
+			document.getElementById("toglle_element_4").style.color="black";
+			document.getElementById("text_logo_big").style.color="black";
+			document.getElementById("go_to_slide0").style.color="black";
+			document.getElementById("go_to_slide1").style.color="black";
+			document.getElementById("go_to_slide2").style.color="black";
+			document.getElementById("go_to_slide3").style.color="black";
+			document.getElementById("go_to_slide4").style.color="black";
+			document.getElementById('slide_menu_bott').style.color="black";
+			document.getElementById('slide_menu_bott1').style.color="black";
+			document.getElementById('slide_menu_bott2').style.color="black";
 
 
-   
 
 
-}
-else{
- document.getElementById("first_info_block").style.cssText="left: -510px;\
-position: fixed;\
-\
- ";
- document.getElementById("second_info_block").style.cssText="right: -510px;\
-position: fixed;\
- ";
 
-document.getElementById("slide_menu").style.background="black";
+			}
+		else{
+			document.getElementById("first_info_block").style.cssText="left: -510px;\
+			position: fixed;\
+			\
+			";
+			document.getElementById("second_info_block").style.cssText="right: -510px;\
+			position: fixed;\
+			";
 
-document.getElementById("toglle_element_0").style.background="white";
-  document.getElementById("toglle_element_1").style.background="white";
-  document.getElementById("toglle_element_2").style.background="white";
- document.getElementById("toglle_element_3").style.color="white";
-  document.getElementById("toglle_element_4").style.color="white";
-      document.getElementById("text_logo_big").style.color="white";
-      	document.getElementById("go_to_slide0").style.color="white";
-	document.getElementById("go_to_slide1").style.color="white";
-	document.getElementById("go_to_slide2").style.color="white";
-	document.getElementById("go_to_slide3").style.color="white";
-	document.getElementById("go_to_slide4").style.color="white";
-		document.getElementById('slide_menu_bott').style.color="white";
-		document.getElementById('slide_menu_bott1').style.color="white";
-	document.getElementById('slide_menu_bott2').style.color="white";
+			document.getElementById("slide_menu").style.background="black";
 
-	
+			document.getElementById("toglle_element_0").style.background="white";
+			document.getElementById("toglle_element_1").style.background="white";
+			document.getElementById("toglle_element_2").style.background="white";
+			document.getElementById("toglle_element_3").style.color="white";
+			document.getElementById("toglle_element_4").style.color="white";
+			document.getElementById("text_logo_big").style.color="white";
+			document.getElementById("go_to_slide0").style.color="white";
+			document.getElementById("go_to_slide1").style.color="white";
+			document.getElementById("go_to_slide2").style.color="white";
+			document.getElementById("go_to_slide3").style.color="white";
+			document.getElementById("go_to_slide4").style.color="white";
+			document.getElementById('slide_menu_bott').style.color="white";
+			document.getElementById('slide_menu_bott1').style.color="white";
+			document.getElementById('slide_menu_bott2').style.color="white";
 
-}
 
-  setTimeout(timer(), 10);
-}, 10);
+
+			}
+
+		setTimeout(timer(), 10);
+	}, 10);
 
 }
 
@@ -224,23 +230,23 @@ function click_load_logo() {
 //переходы на части страницы
 
 function go_to_slide0(){
-	$(document.body.firstChild.childNodes[0].firstChild).trigger('click');
+	$(this.document.getElementById("active0").firstChild).trigger('click');
 
 }
 
 function go_to_slide1(){
-	$(document.body.firstChild.childNodes[1].firstChild).trigger('click');
+	$(this.document.getElementById("active1").firstChild).trigger('click');
 
 }
 function go_to_slide2(){
-	$(document.body.firstChild.childNodes[2].firstChild).trigger('click');
+	$(this.document.getElementById("active2").firstChild).trigger('click');
 
 }
 function go_to_slide3(){
-	$(document.body.firstChild.childNodes[3].firstChild).trigger('click');
+	$(this.document.getElementById("active3").firstChild).trigger('click');
 
 }
 function go_to_slide4(){
-	$(document.body.firstChild.childNodes[4].firstChild).trigger('click');
+	$(this.document.getElementById("active4").firstChild).trigger('click');
 
 }

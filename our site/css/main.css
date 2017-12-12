@@ -287,7 +287,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
 }
 
 .ident{
-	height: 18vh;
+	height: 14vh;
 }
 
 .caption1{
@@ -620,7 +620,7 @@ position: fixed;
 
 /*loader*/
 .preloader_second{
-  transition: right 1s 1s,opacity 1s 1s;
+  transition: right 1s 1s,opacity 1s 0.8s;
   top:53%;
   bottom:0;
   left:0;
@@ -632,7 +632,7 @@ position: fixed;
 
 
 .preloader_first{
-  transition: left 1s 1s,opacity 1s 1s;
+  transition: left 1s 1s,opacity 1s 0.8s;
   z-index:20000;
   top:0;
   bottom:47%;
@@ -643,11 +643,12 @@ position: fixed;
 }
 
 #text_preloader{
-
+	
+	opacity: 1;
   font-size: 45px;
   color:white;
-  margin-top:25.5%;
-  left:0%;
+  margin-top:20.5%;
+  left:0;
   right:0;
   position:fixed;
   display:block
@@ -665,7 +666,7 @@ position: fixed;
   border:1px dashed linear-gradient(to top, rgba(30,87,153,0), rgba(30,87,153,0.8), rgba(30,87,153,1),
                       rgba(30,87,153,1), rgba(41,137,216,1), rgba(30,87,153,1), rgba(30,87,153,1),
                       rgba(30,87,153,0.8),rgba(30,87,153,0));
-  transition: width 1.3s, opacity 1s;
+  transition: width 1.3s, opacity 1.5s 0.6s;
 }
 
 

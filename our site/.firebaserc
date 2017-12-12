@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "my-site-98",
+    "/": "betta-98",
+    "publick": "my-site-98",
+    "/our site/": "betta98-98"
+  }
+}
